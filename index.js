@@ -26,7 +26,7 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == '!안녕') {
+  if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
@@ -50,7 +50,7 @@ client.on('message', (message) => {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: '!안녕', desc: 'embed 예제1'},
+      {name: 'embed', desc: 'embed 예제1'},
       {name: 'embed2', desc: 'embed 예제2 (help)'},
     ];
     let commandStr = '';
