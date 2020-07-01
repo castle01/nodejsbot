@@ -29,7 +29,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == '!안녕') {
-    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+    let img = 'https://postfiles.pstatic.net/MjAyMDA3MDFfMTQy/MDAxNTkzNjA1ODM3OTc1.iss6xrMgqmoGpk_Avzi-tnJtBo27IdrqIjZ-B51REEIg.Ojt1AwMxbo8-vj9wLdsXle0m7KD7HosfMIy1uJ6xOEsg.PNG.wnrehqhd1/DNDNDNDN_04.png?type=w580';
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
       .setURL('http://www.naver.com')
@@ -46,12 +46,12 @@ client.on('message', (message) => {
       .setFooter('보고만듬', img)
 
     message.channel.send(embed)
-  } else if(message.content == 'help') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+  } else if(message.content == '!help') {
+    let helpImg = 'https://i.ytimg.com/vi/uTHYIEN2ayg/hqdefault.jpg';
     let commandList = [
-      {name: 'ping', desc: '현재 핑 상태'},
-      {name: '!안녕', desc: 'embed 예제1'},
-      {name: 'embed2', desc: 'embed 예제2 (help)'},
+      {name: 'ping', desc: '현재 핑 상태-사실헛소리'},
+      {name: '!안녕', desc: '안녕'},
+      {name: '!help', desc: 'help'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
